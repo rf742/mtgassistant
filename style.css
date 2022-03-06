@@ -1,9 +1,7 @@
 ul{
     list-style-position: inside;
 }
-body {
-    background-color:  ;
-}
+
 .button{
     touch-action: manipulation;
     padding: 32px 16px;
