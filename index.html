@@ -11,33 +11,33 @@
     <div x-data="{ count: 40 }">
         <button class="button smallishbutton" x-on:click="count = count + 5">+5</button>
         <button class="button smallishbutton" x-on:click="count++">+</button>
-        <span x-text="count"></span>
+        <span class="value" x-text="count"></span>
         <button class="button smallishbutton" x-on:click="count--">-</button>
         <button class="button smallishbutton" x-on:click="count = count - 5">-5</button>
     </div>
     <h2>Poison Counter</h2>
     <div x-data="{ count: 0 }">
-        <button x-on:click="count++">+</button>
-        <span x-text="count"></span>
-        <button x-on:click="if (count > 0){count--}">-</button>
+        <button class="button" x-on:click="count++">+</button>
+        <span class="value" x-text="count"></span>
+        <button class="button" x-on:click="if (count > 0){count--}">-</button>
     </div>
     <h2>Commander Damage (left)</h2>
     <div x-data="{ count: 0 }">
-        <button x-on:click="count++">+</button>
-        <span x-text="count"></span>
-        <button x-on:click="if (count > 0){count--}">-</button>
+        <button class="button" x-on:click="count++">+</button>
+        <span class="value" x-text="count"></span>
+        <button class="button" x-on:click="if (count > 0){count--}">-</button>
     </div>
     <h2>Commander Damage (across)</h2>
     <div x-data="{ count: 0 }">
-        <button x-on:click="count++">+</button>
-        <span x-text="count"></span>
-        <button x-on:click="if (count > 0){count--}">-</button>
+        <button class="button" x-on:click="count++">+</button>
+        <span class="value" x-text="count"></span>
+        <button class="button" x-on:click="if (count > 0){count--}">-</button>
     </div>
     <h2>Commander Damage (right)</h2>
     <div x-data="{ count: 0 }">
-        <button x-on:click="count++">+</button>
-        <span x-text="count"></span>
-        <button x-on:click="if (count > 0){count--}">-</button>
+        <button class="button" x-on:click="count++">+</button>
+        <span class="value" x-text="count"></span>
+        <button class="button" x-on:click="if (count > 0){count--}">-</button>
     </div>
     <h2>Links</h2>
     <ul>
