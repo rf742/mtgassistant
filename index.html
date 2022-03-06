@@ -1,18 +1,19 @@
 <html>
 <head>
+    <link rel="stylesheet" href="style.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <meta name="viewport" content="width=800, initial-scale=1.0" />
 </head>
 <body>
+    <div align="center">
     <h1 x-data="{ message: 'MTG personal assistant' }" x-text="message"></h1>
     <h2>Life Counter</h2>
     <div x-data="{ count: 40 }">
-        <button x-on:click="count = count + 5">+5</button>
-        <button x-on:click="count++">+</button>
+        <button class="button smallishbutton" x-on:click="count = count + 5">+5</button>
+        <button class="button smallishbutton" x-on:click="count++">+</button>
         <span x-text="count"></span>
-        
-        <button x-on:click="count--">-</button>
-        <button x-on:click="count = count - 5">-5</button>
+        <button class="button smallishbutton" x-on:click="count--">-</button>
+        <button class="button smallishbutton" x-on:click="count = count - 5">-5</button>
     </div>
     <h2>Poison Counter</h2>
     <div x-data="{ count: 0 }">
@@ -43,7 +44,7 @@
         <li><a href="https://scryfall.com" target="_blank">Scryfall</a></li>
         <li><a href="https://gatherer.wizards.com/Pages/Default.aspx">Gatherer</a></li>
     </ul>
-    
+</div>
     
 
 </body>

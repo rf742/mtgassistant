@@ -1,0 +1,9 @@
+ul{
+    list-style-position: inside;
+}
+.button{
+    touch-action: manipulation;
+}
+.smallishbutton{
+    width: 20%;
+}
