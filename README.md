@@ -1,6 +1,6 @@
 # mtgassistant
 
-I don't enjoy downloading apps on my phone for simple tasks. This is a very simple page, put together in 10 minutes, meant to be an alternative to downloadin life tracker apps for commander games. It keeps track of life totals, commander damage, and poison counters during an EDH game. 
+I don't enjoy downloading apps on my phone for simple tasks. This is a very simple page, put together in 10 minutes, meant to be an alternative to downloading life tracker apps for commander games. It keeps track of your life total, commander damage, and poison counters during an EDH game. 
 
 Links are also included to search cards and rulings.
 
