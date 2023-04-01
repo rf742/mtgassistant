@@ -1,7 +1,10 @@
 ul{
     list-style-position: inside;
+    font-size: 18pt;
 }
-
+body{
+    background: #D0C4A0;
+}
 .button{
     touch-action: manipulation;
     padding: 32px 16px;
