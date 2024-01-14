@@ -1,0 +1,47 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <meta name="viewport" content="width=800, initial-scale=1.0" />
+    <style>
+	#inverted {
+	transform: rotate(180deg);
+	}
+	.container {
+		display: grid;
+		height: 80%;
+		margin: 0 auto;
+		justify-content: space-between;
+	}
+    </style>
+</head>
+<body>
+    <div align="center" class="container" >
+    <h1 x-data="{ message: 'MTG personal assistant' }" x-text="message"></h1>
+    <h2>Life Counter</h2>
+    <div x-data="{ count: 20 }" id="inverted" class="spacer">
+        <button class="button smallishbutton" @click="count = count + 5">+5</button>
+        <button class="button smallishbutton" @click="count++">+</button>
+        <span class="value" x-text="count"></span>
+        <button class="button smallishbutton" @click="count--">-</button>
+        <button class="button smallishbutton" @click="count = count - 5">-5</button>
+    </div>
+    <div id="spacer"></div>
+    <div x-data="{ count: 20 }" class="spacer">
+        <button class="button smallishbutton" @click="count = count + 5">+5</button>
+        <button class="button smallishbutton" @click="count++">+</button>
+        <span class="value" x-text="count"></span>
+        <button class="button smallishbutton" @click="count--">-</button>
+        <button class="button smallishbutton" @click="count = count - 5">-5</button>
+    </div>
+    <h2>Links</h2>
+    <ul>
+        <li><a href="https://scryfall.com" target="_blank">Scryfall</a></li>
+        <li><a href="https://gatherer.wizards.com/Pages/Default.aspx" target="_blank">Gatherer</a></li>
+    </ul>
+    
+</div>
+    
+
+</body>
+</html>

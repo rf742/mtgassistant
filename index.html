@@ -7,34 +7,10 @@
 <body>
     <div align="center">
     <h1 x-data="{ message: 'MTG personal assistant' }" x-text="message"></h1>
-    <h2>Life Counter</h2>
-    <div x-data="{ count: 40 }">
-        <button class="button smallishbutton" @click="count = count + 5">+5</button>
-        <button class="button smallishbutton" @click="count++">+</button>
-        <span class="value" x-text="count"></span>
-        <button class="button smallishbutton" @click="count--">-</button>
-        <button class="button smallishbutton" @click="count = count - 5">-5</button>
-    </div>
-
-    <div x-data="{ info: ['Poison Counter', 'Commander Damage (left)', 'Commander Damage (across)', 'Commander Damage (right)'
-    ]}">
-        <template x-for="name in info">
-        <div>
-            <h2 x-text="name"></h2>
-            <div x-data="{ count: 0 }">
-                <button class="button" @click="count++">+</button>
-                <span class="value" x-text="count"></span>
-                <button class="button" @click="if (count > 0){count--}">-</button>
-            </div>
-        </div>
-        </template>
-    </div>
-    <h2>Links</h2>
     <ul>
-        <li><a href="https://scryfall.com" target="_blank">Scryfall</a></li>
-        <li><a href="https://gatherer.wizards.com/Pages/Default.aspx" target="_blank">Gatherer</a></li>
-    </ul>
-    
+	    <h2>Select a Mode</h2>
+	    <li> <a href="commander.html">Commander</a>
+	    <li> <a href="twoplayer.html">Two Player</a>
 </div>
     
 
